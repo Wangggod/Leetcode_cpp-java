@@ -16,7 +16,9 @@ Explanation: [4,-1,2,1] has the largest sum = 6.
 * 随后从第二个数nums[1]开始，将当前最大的和currMaxSum相加后（-1）与当前数相比（1）
 * 此时说明应该更新目前最大的序列为到第二个（1），随后与全局最大（-2）比较，更新全局最大为（1），即抛弃nums[0]，子序列从nums[1]开始
 * 重复上述过程，此时-3+1=-2>-3,说明此时最大值还是截止到1（序列为[1]），与全局最大1比较，不变
-* 重复上述，此时
+* 重复上述，此时11
+
+
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
